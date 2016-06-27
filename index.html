@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Merriweather:300'>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="intro-box">
+    <!--<div class="blur-image"></div>-->
+    <div class="logo-image">
+        <h1>Michał Góra</h1>
+        <h3>-front-end developer-</h3>
+    </div>
+    <div class="face-image"></div>
+</header>
+
+<div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</div>
+
+<div class="sect sectOne ">
+    <h2>Profil</h2>
+    <div id="profil">
+        <div id="my-description-1">
+            Cześć, mam na imię Michał!</br>
+            Jestem studentem czwartego roku studiów na uczelni Akademii Górniczo-Hutniczej im. Stanisława Staszica w
+            Krakowie.
+            Moje zainteresowanie technologiami webowymi pojawiło się stosunkowo niedawno.
+        </div>
+        <div id="my-description-3">
+            Jako początkujący programista front-end developer, z chęcią poznaje nowinki ze świata front-endu i
+            udoskonalam swoje umiejętności w tworzeniu witryn internetowych.
+            Obecnie skupiłem się na nauce JavaScriptu i pokładam w tym języku ogromne nadzieje.
+        </div>
+        <div id="my-description-2">
+            Opanowałem w stopniu zadawalającym HTML oraz CSS, potrafię też poradzić sobie z JavaScriptem, PHP,
+            frameworkiem Symfony oraz z
+            narzędziami obróbki graficznej.</br>
+            <b>Dodatkowo miałem styczność z:</b>
+            <ul>
+                <li>C++</li>
+                <li>Javą</li>
+                <li>Program użytkowy: UML</li>
+            </ul>
+            <b>Z bazami danych:</b>
+            <ul>
+                <li>Microsoft Access</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="sect sectTwo">
+    <h2>Umiejętności</h2>
+    <div class="columns ten article1">
+        <p class="skills"><strong>Specjalizuję się w...</strong></p>
+        <ul>
+            <img src="images/skills/html.png"/>
+            <img src="images/skills/css.png"/>
+            <img src="images/skills/boostrap.png"/>
+            <img src="images/skills/linux.png"/>
+        </ul>
+    </div>
+
+    <div class="columns ten article2">
+        <p class="skills"><strong>Znam w stopniu zadawalającym...</strong></p>
+        <ul>
+            <img src="images/skills/javascript.png"/>
+            <img src="images/skills/jquery.png"/>
+            <img src="images/skills/github.png"/>
+            <img src="images/skills/c.png"/>
+        </ul>
+    </div>
+
+    <div class="columns ten article3">
+        <p class="skills"><strong>Poznaję, miałem styczność...</strong></p>
+        <ul>
+            <img src="images/skills/ruby-rails.png"/>
+            <img src="images/skills/php.png"/>
+            <img src="images/skills/sass.png"/>
+        </ul>
+    </div>
+</div>
+
+
+<div class="sect sectThree">
+    <h2>Projekty</h2>
+    <div id="project">
+        <div id="my-project-1">
+            Wszystkie moje projekty są umieszczone na GitHubie.
+            Znanjdują się
+        </div>
+        <div id="my-project-2">
+            <a target="_blank" href="https://github.com"><img src="images/skills/github.png" alt=""/></a>
+        </div>
+
+    </div>
+</div>
+
+<div class="sect sectFour">
+    <h2>Kontakt</h2>
+    <div id="contact">
+        <div id="contact-1">
+            nr. telefonu:
+            609 789 576
+        </div>
+        <div id="contact-2">
+            <div id="container">
+                <form action="form/send.php" method="post" id="contactform">
+                    <fieldset>
+                        <input type="text" name="contact_name" placeholder="Imię i nazwisko" required="required"
+                               tabindex="1"/>
+                        <input type="email" name="contact_email" placeholder="Adres e-mail" required="required"
+                               tabindex="2"/>
+                <textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości" required="required"
+                          tabindex="3"></textarea>
+                        <input type="submit" value="Wyślij" tabindex="5"/>Podaj wynik: <span
+                            class="form_check_1"></span> &times; <span class="form_check_2"></span> = <input type="text"
+                                                                                                             name="contact_check"
+                                                                                                             maxlength="2"
+                                                                                                             tabindex="4"/>
+                        <input type="hidden" name="contact_check_data" value=""/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<section>
+    <footer class="sect footer footer-stuff">
+        <div>
+            Copyright Michał Góra
+        </div>
+    </footer>
+</section>
+<script src="js/parallax-header.js"></script>
+<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+
+
+<script>
+CookieAlert.init({
+style: 'dark',
+position: 'bottom',
+opacity: '0.6',
+displayTime: 0,
+cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+text: 'Ta strona korzysta z plików cookies.'
+});</script>
+
+
+
+
+
+</body>
+</html>
