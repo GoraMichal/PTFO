@@ -31,6 +31,7 @@ $mail = new PHPMailer();
 $mail->CharSet = 'UTF-8';
 
 $mail->SetFrom($_POST['contact_email'], $_POST['contact_name']);
+$mail->SetFrom($_POST['contact_email'], $_POST['contact_name']);
 $mail->AddAddress('michalgorazs3@gmail.com');
 $mail->Subject = 'Wiadomość ze strony internetowej';
 $mail->Body = $_POST['contact_body'];

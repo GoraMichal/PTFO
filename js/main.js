@@ -1,6 +1,56 @@
+var pContainerHeight = $('.intro-box').height();
+
+$(window).scroll(function(){
+
+    var wScroll = $(this).scrollTop();
+
+    if (wScroll <= pContainerHeight) {
+
+        $('.logo-image').css({
+            'transform' : 'translate(0px, '+ wScroll /7 +'%)'
+        });
+
+        $('.face-image').css({
+            'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+        });
+    }
+});
+
+var pContainerHeightProjects = $('.sectThree').height();
+
+$(window).scroll(function(){
+
+    var wScroll = $(this).scrollTop();
+
+    if (wScroll <= pContainerHeightProjects) {
+
+        $('.lol').css({
+            'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+        });
+    }
+});
+
+
+$(window).on("load",function() {
+    $(window).scroll(function() {
+        $(".fadeIn").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+            }
+        });
+    }); $(window).scroll(); //invoke scroll-handler on page-load
+});
+
 $(function() {
-    var check_1 = (Math.floor(Math.random() * 1) + 9).toString(),
-        check_2 = (Math.floor(Math.random() * 1) + 9).toString(),
+    var check_1 = (Math.floor(Math.random() * 9)).toString(),
+        check_2 = (Math.floor(Math.random() * 9)).toString(),
         check = check_1 + check_2;
 
     $('#contactform span.form_check_1').text(check_1);
