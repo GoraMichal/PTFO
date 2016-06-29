@@ -7,29 +7,10 @@ $(window).scroll(function(){
     if (wScroll <= pContainerHeight) {
 
         $('.logo-image').css({
-            'transform' : 'translate(0px, '+ wScroll /7 +'%)'
-        });
-
-        $('.face-image').css({
-            'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+            'transform' : 'translate(0px, '+ wScroll /5 +'%)'
         });
     }
 });
-
-var pContainerHeightProjects = $('.sectThree').height();
-
-$(window).scroll(function(){
-
-    var wScroll = $(this).scrollTop();
-
-    if (wScroll <= pContainerHeightProjects) {
-
-        $('.lol').css({
-            'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
-        });
-    }
-});
-
 
 $(window).on("load",function() {
     $(window).scroll(function() {
