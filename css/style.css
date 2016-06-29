@@ -340,9 +340,10 @@ img {
 
 /*My projects*/
 .project {
+    width: auto;
     line-height: 2.5em;
-    margin: 1em 1em 10em 18em;
-    padding: 3em 0 3em 0;
+    margin: 1em 1em 10em 13em;
+    padding: 3em 0 3em 7em;
 }
 
 /*//////////////Contact///////////////////*/
@@ -355,7 +356,7 @@ img {
     letter-spacing: 0.1em;
     flex-basis: 35%;
     flex-shrink: 1;
-    /*padding-left: 6em;*/
+    padding-left: 6.5em;
     margin-left: -3em;
     margin-bottom: 8em;
     text-align: center;
