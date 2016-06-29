@@ -133,8 +133,7 @@ img {
 .sectTwo {
     background-image: url("../images/background-portfolio.jpg");
     background-position: top center;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-attachment: fixed, scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -145,8 +144,7 @@ img {
 .sectThree {
     background-image: url("../images/background-portfolio.jpg");
     background-position: top center;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-attachment: fixed, scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
