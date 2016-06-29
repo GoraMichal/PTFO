@@ -32,7 +32,6 @@ body {
         font-size: 40%;
         display: block;
     }
-    .
 }
 
 /*@media only screen and (max-width: 400px) {*/
@@ -302,8 +301,6 @@ img {
     position: relative;
     top: -0.5em;
     padding-bottom: 1em;
-    /*font-weight: 800;*/
-    /*font-size: 110%;*/
     color: #B53841;
     -webkit-transition: color 150ms ease-in, top 100ms ease-out;
     transition: color 150ms ease-in, top 100ms ease-out;
@@ -378,18 +375,6 @@ img {
     padding: 2%;
 }
 
-/*@media only screen and (max-width: 900px) {*/
-/*.profil {*/
-/*display: block;*/
-/*font-size: 90%;*/
-/*}*/
-/*}*/
-/*@media only screen and (max-width: 600px) {*/
-/*.profil {*/
-/*display: block;*/
-/*font-size: 50%;*/
-/*}*/
-/*}*/
 /*Umiejetnosci*/
 
 .skills {
@@ -408,6 +393,16 @@ img {
     display: flex;
 }
 
+textarea {
+    font-size: 1em;
+    font-family: "Open Sans Condensed";
+}
+
+input {
+    font-size: 1em;
+    font-family: "Open Sans Condensed";
+}
+
 .contact-1 {
     font-size: 1.2em;
     letter-spacing: 0.1em;
@@ -416,10 +411,6 @@ img {
     margin-bottom: 8em;
     text-align: center;
 }
-
-/*.contact-1 p {*/
-    /*!*text-align: center;*!*/
-/*}*/
 
 .contact-2 {
     flex-basis: 65%;
@@ -450,7 +441,6 @@ textarea:active {
     background-color: #ffffff;
     padding: 1em;
     margin-top: 1em;
-    /*font-size: 0.7em;*/
     color: #827f80;
     line-height: 1.4em;
 }
@@ -462,7 +452,6 @@ textarea:active {
 #contactform .form-error {
     background-color: #b5191b;
     padding: 1em;
-    /*font-size: 0.7em;*/
     color: #ffffff;
     margin-bottom: 1em;
     line-height: 1.4em;
@@ -497,7 +486,7 @@ textarea:active {
 #contactform fieldset textarea {
     color: #acb4bd;
     border: 1px solid #d8dee5;
-    box-shadow: 0em 1em 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.1);
     padding: 0.8em 0.9em;
     width: 100%;
     max-width: 100%;
@@ -570,7 +559,6 @@ textarea:active {
 /*////////////////////FOOTER//////////////////*/
 
 .footer {
-    height: 5%;
     background-color: black;
     text-align: center;
     color: white;
@@ -674,7 +662,7 @@ section {
     margin-left: 0;
 }
 
-/*ANIMATION FadeIn*/
+/*////////////ANIMATION FadeIn////////////////*/
 
 @-o-keyframes fadeIn {
     0% {
