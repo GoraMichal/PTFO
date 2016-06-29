@@ -34,22 +34,6 @@ body {
     }
 }
 
-/*@media only screen and (max-width: 400px) {*/
-/*body {*/
-/*font-size: 30%;*/
-/*}*/
-/*}*/
-/*@media only screen and (min-width: 600px) {*/
-/*body {*/
-/*font-size: 70%;*/
-/*}*/
-/*}*/
-/*@media only screen and (min-width: 800px) {*/
-/*body {*/
-/*font-size: 115%;*/
-/*}*/
-/*}*/
-
 h1 {
     color: #ffffff;
     font-weight: 200;
@@ -70,7 +54,7 @@ h2 {
     font-weight: 300;
     font-size: 3em;
     line-height: 1.5;
-    padding-left: 5em;
+    padding-left: 4.4em;
     margin-bottom: 1em;
 }
 
@@ -106,32 +90,6 @@ img {
     margin-right: 1em;
     margin-bottom: 0.5em;
 }
-
-/*@media only screen and (max-width: 900px) {*/
-/*h1 {*/
-/*font-size: 40%;*/
-/*}*/
-/*}*/
-
-/*@media only screen and (max-width: 900px) {*/
-/*h2 {*/
-/*font-size: 40%;*/
-/*}*/
-/*}*/
-
-/*@media only screen and (max-width: 400px) {*/
-/*h1 {*/
-/*font-size: 40%;*/
-/*}*/
-/*}*/
-
-/*@media only screen and (max-width: 400px) {*/
-/*h2 {*/
-/*font-size: 40%;*/
-/*}*/
-/*}*/
-/**/
-
 .intro-box {
     position: relative;
     height: 100%;
@@ -156,7 +114,6 @@ img {
     top: 30%;
     margin-top: -50px;
     text-align: center;
-    /*font-size: 5em;*/
     color: white;
 }
 
@@ -175,11 +132,25 @@ img {
 
 .sectTwo {
     background-image: url("../images/background-portfolio.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*MULTIPLE*/
 .sectThree {
     background-image: url("../images/background-portfolio.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .sectFour {
@@ -234,16 +205,6 @@ img {
     background-color: rgba(207, 207, 207, 0.5);
 }
 
-/*@media only screen and (min-width: 750px) {*/
-/*.progressbar .holder {*/
-/*font-size: 90%;*/
-/*}*/
-/*}*/
-/*@media only screen and (min-width: 900px) {*/
-/*.progressbar .holder {*/
-/*font-size: 95%;*/
-/*}*/
-/*}*/
 /*pas ladowania*/
 .progressbar .holder .bar {
     position: absolute;
@@ -277,7 +238,6 @@ img {
 }
 
 /*okregi*/
-
 .progressbar .holder .labels i::before {
     position: absolute;
     bottom: 2px;
@@ -364,7 +324,6 @@ img {
 }
 
 .profil {
-    /*font-size: 1em;*/
     line-height: 1.6em;
     background-color: #827f80;
     padding: 1em;
@@ -393,6 +352,22 @@ img {
     display: flex;
 }
 
+.contact-1 {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    flex-basis: 35%;
+    flex-shrink: 1;
+    /*padding-left: 6em;*/
+    margin-left: -3em;
+    margin-bottom: 8em;
+    text-align: center;
+}
+
+.contact-2 {
+    flex-basis: 65%;
+    flex-shrink: 10;
+}
+
 textarea {
     font-size: 1em;
     font-family: "Open Sans Condensed";
@@ -401,20 +376,6 @@ textarea {
 input {
     font-size: 1em;
     font-family: "Open Sans Condensed";
-}
-
-.contact-1 {
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-    flex-basis: 35%;
-    flex-shrink: 1;
-    margin-bottom: 8em;
-    text-align: center;
-}
-
-.contact-2 {
-    flex-basis: 65%;
-    flex-shrink: 1;
 }
 
 input:focus,
