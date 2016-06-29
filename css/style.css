@@ -23,12 +23,14 @@ body {
 }
 @media (max-width: 800px) and (min-width: 500px) {
     body {
-        font-size: 40%;
+        font-size: 50%;
+        display: block;
     }
 }
 @media (max-width: 500px) {
     body {
-        font-size: 30%;
+        font-size: 40%;
+        display: block;
     }
     .
 }
